@@ -1,4 +1,4 @@
-﻿Log file open, 10/18/18 17:49:22
+﻿Log file open, 10/18/18 17:58:52
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: Aahedtest
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.254810
+LogStats: Stats thread started at 0.254983
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.065s to configure plugins.
+LogStreaming: Display: Took  0.062s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -151,182 +151,559 @@ LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
 LogStreaming: Display: Took  0.000s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.10.18-15.49.22:802][  0]LogInit: Selected Device Profile: [Windows]
-[2018.10.18-15.49.22:802][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.10.18-15.49.22:812][  0]LogHAL: Display: Platform has ~ 16 GB [17123885056 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2018.10.18-15.49.22:812][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
-[2018.10.18-15.49.22:812][  0]LogInit: Going up to parent DeviceProfile []
-[2018.10.18-15.49.22:812][  0]LogInit: Computer: AEGIS-HANTHEL
-[2018.10.18-15.49.22:812][  0]LogInit: User: Aahed
-[2018.10.18-15.49.22:812][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.10.18-15.49.22:812][  0]LogInit: High frequency timer resolution =4.101558 MHz
-[2018.10.18-15.49.22:813][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.10.18-15.49.22:813][  0]LogMemory: Platform Memory Stats for Windows
-[2018.10.18-15.49.22:813][  0]LogMemory: Process Physical Memory: 99.70 MB used, 99.70 MB peak
-[2018.10.18-15.49.22:813][  0]LogMemory: Process Virtual Memory: 91.23 MB used, 91.23 MB peak
-[2018.10.18-15.49.22:813][  0]LogMemory: Physical Memory: 5399.45 MB used,  10931.16 MB free, 16330.61 MB total
-[2018.10.18-15.49.22:813][  0]LogMemory: Virtual Memory: 4640.17 MB used,  10931.16 MB free, 134217728.00 MB total
-[2018.10.18-15.49.22:823][  0]LogInit: Using OS detected language (en-US).
-[2018.10.18-15.49.22:823][  0]LogInit: Using OS detected locale (en-US).
-[2018.10.18-15.49.22:823][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.10.18-15.49.23:085][  0]LogStreaming: Display: Took  0.262s to InitEngineTextLocalization.
-[2018.10.18-15.49.23:085][  0]LogInit: Setting process to per monitor DPI aware
-[2018.10.18-15.49.23:106][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.10.18-15.49.23:106][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.10.18-15.49.23:220][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.10.18-15.49.23:220][  0]LogD3D11RHI: D3D11 adapters:
-[2018.10.18-15.49.23:257][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
-[2018.10.18-15.49.23:257][  0]LogD3D11RHI:       8079/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2018.10.18-15.49.23:259][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.10.18-15.49.23:259][  0]LogD3D11RHI:       0/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.10.18-15.49.23:259][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.10.18-15.49.23:263][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.10.18-15.49.23:263][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
-[2018.10.18-15.49.23:263][  0]LogWindows: EnumDisplayDevices:
-[2018.10.18-15.49.23:263][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
-[2018.10.18-15.49.23:263][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
-[2018.10.18-15.49.23:263][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
-[2018.10.18-15.49.23:263][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
-[2018.10.18-15.49.23:263][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2018.10.18-15.49.23:263][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
-[2018.10.18-15.49.23:263][  0]LogD3D11RHI:   Driver Version: 411.70 (internal:24.21.14.1170, unified:411.70)
-[2018.10.18-15.49.23:263][  0]LogD3D11RHI:      Driver Date: 9-25-2018
-[2018.10.18-15.49.23:263][  0]LogRHI: Texture pool is 5655 MB (70% of 8079 MB)
-[2018.10.18-15.49.23:289][  0]LogD3D11RHI: Async texture creation enabled
-[2018.10.18-15.49.23:321][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.10.18-15.49.23:363][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Intermediate/Shaders/WorkingDirectory/8472/).
-[2018.10.18-15.49.23:363][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Aahed/AppData/Local/Temp/UnrealShaderWorkingDir/6D0698AF4264113769911BBBF706B4EF/'.
-[2018.10.18-15.49.23:546][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.10.18-15.49.23:555][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.10.18-15.49.23:564][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.10.18-15.49.23:573][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.10.18-15.49.23:582][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.10.18-15.49.23:591][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.10.18-15.49.23:600][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.10.18-15.49.23:609][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.10.18-15.49.23:614][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.10.18-15.49.23:670][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.10.18-15.49.23:722][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.10.18-15.49.23:722][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.10.18-15.49.23:738][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.10.18-15.49.23:738][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.10.18-15.49.23:747][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.10.18-15.49.23:755][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.10.18-15.49.23:764][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.10.18-15.49.23:773][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.10.18-15.49.23:779][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.10.18-15.49.23:779][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.10.18-15.49.23:813][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.10.18-15.49.23:813][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.10.18-15.49.23:813][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.10.18-15.49.24:305][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.10.18-15.49.24:341][  0]LogDerivedDataCache: Loaded boot cache 0.04s 71MB C:/Users/Aahed/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2018.10.18-15.49.24:342][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Aahed/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
-[2018.10.18-15.49.24:342][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.10.18-15.49.24:342][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.10.18-15.49.24:342][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.10.18-15.49.24:342][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.10.18-15.49.24:351][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.10.18-15.49.24:363][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Aahed/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.10.18-15.49.24:363][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.10.18-15.49.24:363][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.10.18-15.49.24:375][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.10.18-15.49.24:377][  0]LogSlate: Using FreeType 2.6.0
-[2018.10.18-15.49.24:377][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.10.18-15.49.24:433][  0]LogAssetRegistry: FAssetRegistry took 0.0245 seconds to start up
-[2018.10.18-15.49.24:651][  0]LogInit: Selected Device Profile: [Windows]
-[2018.10.18-15.49.24:736][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.10.18-15.49.24:738][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.10.18-15.49.24:738][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2018.10.18-15.49.24:738][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.10.18-15.49.24:738][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.10.18-15.49.24:749][  0]LogNetVersion: Aahedtest 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 645508195)
-[2018.10.18-15.49.25:080][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 2 prioritized culture(s) in 0.068729 seconds
-[2018.10.18-15.49.25:085][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
-[2018.10.18-15.49.25:085][  0]LogUObjectAllocator: 6690864 out of 0 bytes used by permanent object pool.
-[2018.10.18-15.49.25:085][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.10.18-15.49.25:831][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.10.18-15.49.25:843][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.10.18-15.49.25:957][  0]SourceControl: Source control is disabled
-[2018.10.18-15.49.26:409][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.10.18-15.49.26:453][  0]LogOcInput: OculusInput pre-init called
-[2018.10.18-15.49.26:496][  0]LogEngine: Initializing Engine...
-[2018.10.18-15.49.26:497][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.10.18-15.49.26:497][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.10.18-15.49.26:497][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.10.18-15.49.26:497][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.10.18-15.49.26:497][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.10.18-15.49.26:638][  0]LogInit: Initializing FReadOnlyCVARCache
-[2018.10.18-15.49.26:646][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.10.18-15.49.26:684][  0]LogInit: XAudio2 using 'Acer X34A (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.10.18-15.49.26:692][  0]LogInit: FAudioDevice initialized.
-[2018.10.18-15.49.26:692][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2018.10.18-15.49.26:729][  0]LogDerivedDataCache: Saved boot cache 0.04s 71MB C:/Users/Aahed/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2018.10.18-15.49.26:736][  0]LogInit: Texture streaming: Enabled
-[2018.10.18-15.49.26:746][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.10.18-15.49.26:754][  0]LogInit: Transaction tracking system initialized
-[2018.10.18-15.49.26:766][  0]BlueprintLog: New page: Editor Load
-[2018.10.18-15.49.26:809][  0]LocalizationService: Localization service is disabled
-[2018.10.18-15.49.26:990][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.10.18-15.49.26:990][  0]LogCook: Display: Mobile HDR setting 1
-[2018.10.18-15.49.26:990][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.10.18-15.49.26:990][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.10.18-15.49.26:990][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.10.18-15.49.26:990][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.10.18-15.49.26:990][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.10.18-15.49.27:060][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/' took 0.01s
-[2018.10.18-15.49.27:060][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.10.18-15.49.27:060][  0]LightingResults: New page: Lighting Build
-[2018.10.18-15.49.27:062][  0]MapCheck: New page: Map Check
-[2018.10.18-15.49.27:062][  0]LightingResults: New page: Lighting Build
-[2018.10.18-15.49.27:351][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2018.10.18-15.49.27:357][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.10.18-15.49.27:375][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.10.18-15.49.27:415][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 40.556ms to complete.
-[2018.10.18-15.49.27:416][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.355
-[2018.10.18-15.49.27:501][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.10.18-15.49.27:506][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.10.18-15.49.27:511][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.10.18-15.49.27:518][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.10.18-15.49.27:523][  0]LogCollectionManager: Loaded 0 collections in 0.001128 seconds
-[2018.10.18-15.49.27:559][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Saved/Collections/' took 0.01s
-[2018.10.18-15.49.27:559][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/Developers/Aahed/Collections/' took 0.01s
-[2018.10.18-15.49.27:559][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/Collections/' took 0.01s
-[2018.10.18-15.49.27:559][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.10.18-15.49.27:569][  0]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2597 classes and 612 folders.
-[2018.10.18-15.49.27:574][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.10.18-15.49.27:601][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.10.18-15.49.27:604][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
-[2018.10.18-15.49.27:614][  0]LogSlate: Took 0.000153 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.10.18-15.49.27:616][  0]LogSlate: Took 0.000167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.10.18-15.49.27:619][  0]LogSlate: Took 0.000146 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.10.18-15.49.27:679][  0]LogRenderer: Reallocating scene render targets to support 2172x780 Format 10 NumSamples 1 (Frame:1).
-[2018.10.18-15.49.27:792][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.10.18-15.49.27:792][  0]LogLoad: (Engine Initialization) Total time: 6.09 seconds
-[2018.10.18-15.49.27:792][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.10.18-15.49.27:801][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.10.18-15.49.27:818][  0]LogAssetRegistry: Asset discovery search completed in 3.4063 seconds
-[2018.10.18-15.49.27:819][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.10.18-15.49.27:819][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000032 seconds (updated 0 objects)
-[2018.10.18-15.49.27:821][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.10.18-15.49.29:782][230]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.10.18-15.49.30:946][370]SourceControl: fatal: C:/Program Files/Epic Games/UE_4.20/Engine/Content: 'C:/Program Files/Epic Games/UE_4.20/Engine/Content' is outside repository
-[2018.10.18-15.49.31:008][370]EditorErrors: Warning: No assets to check in!
+[2018.10.18-15.58.52:719][  0]LogInit: Selected Device Profile: [Windows]
+[2018.10.18-15.58.52:719][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.10.18-15.58.52:727][  0]LogHAL: Display: Platform has ~ 16 GB [17123885056 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.10.18-15.58.52:727][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2018.10.18-15.58.52:727][  0]LogInit: Going up to parent DeviceProfile []
+[2018.10.18-15.58.52:727][  0]LogInit: Computer: AEGIS-HANTHEL
+[2018.10.18-15.58.52:727][  0]LogInit: User: Aahed
+[2018.10.18-15.58.52:727][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.10.18-15.58.52:727][  0]LogInit: High frequency timer resolution =4.101558 MHz
+[2018.10.18-15.58.52:727][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.10.18-15.58.52:727][  0]LogMemory: Platform Memory Stats for Windows
+[2018.10.18-15.58.52:727][  0]LogMemory: Process Physical Memory: 99.08 MB used, 99.08 MB peak
+[2018.10.18-15.58.52:727][  0]LogMemory: Process Virtual Memory: 90.80 MB used, 90.80 MB peak
+[2018.10.18-15.58.52:727][  0]LogMemory: Physical Memory: 5454.81 MB used,  10875.80 MB free, 16330.61 MB total
+[2018.10.18-15.58.52:727][  0]LogMemory: Virtual Memory: 4640.17 MB used,  10875.80 MB free, 134217728.00 MB total
+[2018.10.18-15.58.52:738][  0]LogInit: Using OS detected language (en-US).
+[2018.10.18-15.58.52:738][  0]LogInit: Using OS detected locale (en-US).
+[2018.10.18-15.58.52:738][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.10.18-15.58.52:995][  0]LogStreaming: Display: Took  0.258s to InitEngineTextLocalization.
+[2018.10.18-15.58.52:995][  0]LogInit: Setting process to per monitor DPI aware
+[2018.10.18-15.58.53:014][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.10.18-15.58.53:014][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.10.18-15.58.53:126][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.10.18-15.58.53:126][  0]LogD3D11RHI: D3D11 adapters:
+[2018.10.18-15.58.53:161][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2018.10.18-15.58.53:161][  0]LogD3D11RHI:       8079/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.10.18-15.58.53:163][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.10.18-15.58.53:163][  0]LogD3D11RHI:       0/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.10.18-15.58.53:163][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.10.18-15.58.53:167][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.10.18-15.58.53:167][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2018.10.18-15.58.53:167][  0]LogWindows: EnumDisplayDevices:
+[2018.10.18-15.58.53:167][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2018.10.18-15.58.53:167][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.10.18-15.58.53:167][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.10.18-15.58.53:167][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.10.18-15.58.53:167][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2018.10.18-15.58.53:167][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2018.10.18-15.58.53:167][  0]LogD3D11RHI:   Driver Version: 411.70 (internal:24.21.14.1170, unified:411.70)
+[2018.10.18-15.58.53:167][  0]LogD3D11RHI:      Driver Date: 9-25-2018
+[2018.10.18-15.58.53:167][  0]LogRHI: Texture pool is 5655 MB (70% of 8079 MB)
+[2018.10.18-15.58.53:194][  0]LogD3D11RHI: Async texture creation enabled
+[2018.10.18-15.58.53:229][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.10.18-15.58.53:271][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Intermediate/Shaders/WorkingDirectory/7556/).
+[2018.10.18-15.58.53:271][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Aahed/AppData/Local/Temp/UnrealShaderWorkingDir/C541AFA245B18C0C3B907295D5561912/'.
+[2018.10.18-15.58.53:477][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.10.18-15.58.53:487][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.10.18-15.58.53:496][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.10.18-15.58.53:506][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.10.18-15.58.53:514][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.10.18-15.58.53:524][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.10.18-15.58.53:534][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.10.18-15.58.53:544][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.10.18-15.58.53:549][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:605][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.10.18-15.58.53:606][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.10.18-15.58.53:657][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.10.18-15.58.53:657][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.10.18-15.58.53:673][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.10.18-15.58.53:673][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.10.18-15.58.53:682][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.10.18-15.58.53:690][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.10.18-15.58.53:699][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.10.18-15.58.53:707][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.10.18-15.58.53:714][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.10.18-15.58.53:714][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.10.18-15.58.53:749][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.10.18-15.58.53:749][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.10.18-15.58.53:749][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.10.18-15.58.54:239][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.10.18-15.58.54:277][  0]LogDerivedDataCache: Loaded boot cache 0.04s 71MB C:/Users/Aahed/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.10.18-15.58.54:277][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Aahed/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2018.10.18-15.58.54:277][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.10.18-15.58.54:277][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.10.18-15.58.54:277][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.10.18-15.58.54:277][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.10.18-15.58.54:285][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.10.18-15.58.54:298][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Aahed/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.10.18-15.58.54:298][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.10.18-15.58.54:298][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.10.18-15.58.54:310][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.10.18-15.58.54:311][  0]LogSlate: Using FreeType 2.6.0
+[2018.10.18-15.58.54:312][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.10.18-15.58.54:368][  0]LogAssetRegistry: FAssetRegistry took 0.0248 seconds to start up
+[2018.10.18-15.58.54:587][  0]LogInit: Selected Device Profile: [Windows]
+[2018.10.18-15.58.54:619][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.10.18-15.58.54:621][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.10.18-15.58.54:621][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.10.18-15.58.54:621][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.10.18-15.58.54:621][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.10.18-15.58.54:686][  0]LogNetVersion: Aahedtest 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 645508195)
+[2018.10.18-15.58.55:012][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 2 prioritized culture(s) in 0.066017 seconds
+[2018.10.18-15.58.55:017][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2018.10.18-15.58.55:017][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
+[2018.10.18-15.58.55:017][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.10.18-15.58.55:761][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.10.18-15.58.55:774][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.10.18-15.58.55:886][  0]SourceControl: Source control is disabled
+[2018.10.18-15.58.55:887][  0]SourceControl: Source control is disabled
+[2018.10.18-15.58.55:887][  0]SourceControl: Source control is disabled
+[2018.10.18-15.58.55:888][  0]SourceControl: Source control is disabled
+[2018.10.18-15.58.56:021][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.10.18-15.58.56:064][  0]LogOcInput: OculusInput pre-init called
+[2018.10.18-15.58.56:108][  0]LogEngine: Initializing Engine...
+[2018.10.18-15.58.56:109][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.10.18-15.58.56:109][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.10.18-15.58.56:109][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.10.18-15.58.56:109][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.10.18-15.58.56:110][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.10.18-15.58.56:250][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.10.18-15.58.56:258][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.10.18-15.58.56:267][  0]LogInit: XAudio2 using 'Acer X34A (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.10.18-15.58.56:274][  0]LogInit: FAudioDevice initialized.
+[2018.10.18-15.58.56:274][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.10.18-15.58.56:308][  0]LogDerivedDataCache: Saved boot cache 0.03s 71MB C:/Users/Aahed/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.10.18-15.58.56:317][  0]LogInit: Texture streaming: Enabled
+[2018.10.18-15.58.56:327][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.10.18-15.58.56:334][  0]LogInit: Transaction tracking system initialized
+[2018.10.18-15.58.56:346][  0]BlueprintLog: New page: Editor Load
+[2018.10.18-15.58.56:388][  0]LocalizationService: Localization service is disabled
+[2018.10.18-15.58.56:562][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.10.18-15.58.56:562][  0]LogCook: Display: Mobile HDR setting 1
+[2018.10.18-15.58.56:562][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.10.18-15.58.56:562][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.10.18-15.58.56:562][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.10.18-15.58.56:562][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.10.18-15.58.56:562][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.10.18-15.58.56:634][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/' took 0.01s
+[2018.10.18-15.58.56:634][  0]SourceControl: Source control is disabled
+[2018.10.18-15.58.56:635][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.20/FeaturePacks/StarterContent.upack)
+[2018.10.18-15.58.56:637][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2018.10.18-15.58.56:641][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2018.10.18-15.58.56:644][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2018.10.18-15.58.56:648][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2018.10.18-15.58.56:650][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2018.10.18-15.58.56:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2018.10.18-15.58.56:657][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2018.10.18-15.58.56:660][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2018.10.18-15.58.56:663][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2018.10.18-15.58.56:666][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2018.10.18-15.58.56:669][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2018.10.18-15.58.56:673][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2018.10.18-15.58.56:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Collapse01.uasset"
+[2018.10.18-15.58.56:679][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Collapse02.uasset"
+[2018.10.18-15.58.56:680][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2018.10.18-15.58.56:683][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Explosion01.uasset"
+[2018.10.18-15.58.56:686][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Explosion02.uasset"
+[2018.10.18-15.58.56:687][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2018.10.18-15.58.56:690][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Fire01.uasset"
+[2018.10.18-15.58.56:691][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2018.10.18-15.58.56:694][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2018.10.18-15.58.56:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2018.10.18-15.58.56:698][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Light01.uasset"
+[2018.10.18-15.58.56:699][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2018.10.18-15.58.56:702][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Light02.uasset"
+[2018.10.18-15.58.56:704][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2018.10.18-15.58.56:707][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Smoke01.uasset"
+[2018.10.18-15.58.56:708][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2018.10.18-15.58.56:711][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2018.10.18-15.58.56:715][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2018.10.18-15.58.56:722][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2018.10.18-15.58.56:723][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2018.10.18-15.58.56:727][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2018.10.18-15.58.56:730][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2018.10.18-15.58.56:734][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Steam01.uasset"
+[2018.10.18-15.58.56:735][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2018.10.18-15.58.56:738][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2018.10.18-15.58.56:741][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2018.10.18-15.58.56:744][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2018.10.18-15.58.56:747][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2018.10.18-15.58.56:750][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2018.10.18-15.58.56:753][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2018.10.18-15.58.56:757][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2018.10.18-15.58.56:759][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2018.10.18-15.58.56:761][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2018.10.18-15.58.56:764][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2018.10.18-15.58.56:767][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2018.10.18-15.58.56:770][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2018.10.18-15.58.56:773][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2018.10.18-15.58.56:777][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2018.10.18-15.58.56:785][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2018.10.18-15.58.56:786][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2018.10.18-15.58.56:820][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2018.10.18-15.58.56:823][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2018.10.18-15.58.56:826][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2018.10.18-15.58.56:830][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Maps/Minimal_Default.umap"
+[2018.10.18-15.58.56:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2018.10.18-15.58.56:837][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Maps/StarterMap.umap"
+[2018.10.18-15.58.56:850][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2018.10.18-15.58.56:854][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2018.10.18-15.58.56:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2018.10.18-15.58.56:859][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2018.10.18-15.58.56:862][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2018.10.18-15.58.56:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2018.10.18-15.58.56:867][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2018.10.18-15.58.56:871][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2018.10.18-15.58.56:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2018.10.18-15.58.56:876][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2018.10.18-15.58.56:879][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2018.10.18-15.58.56:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2018.10.18-15.58.56:885][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2018.10.18-15.58.56:888][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2018.10.18-15.58.56:891][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2018.10.18-15.58.56:894][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2018.10.18-15.58.56:897][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2018.10.18-15.58.56:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2018.10.18-15.58.56:903][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Glass.uasset"
+[2018.10.18-15.58.56:906][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2018.10.18-15.58.56:908][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2018.10.18-15.58.56:911][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2018.10.18-15.58.56:915][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2018.10.18-15.58.56:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2018.10.18-15.58.56:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2018.10.18-15.58.56:923][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2018.10.18-15.58.56:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2018.10.18-15.58.56:929][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2018.10.18-15.58.56:932][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2018.10.18-15.58.56:935][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2018.10.18-15.58.56:938][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2018.10.18-15.58.56:941][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2018.10.18-15.58.56:943][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2018.10.18-15.58.56:946][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2018.10.18-15.58.56:949][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2018.10.18-15.58.56:952][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2018.10.18-15.58.56:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2018.10.18-15.58.56:958][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2018.10.18-15.58.56:961][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2018.10.18-15.58.56:964][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2018.10.18-15.58.56:967][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2018.10.18-15.58.56:970][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2018.10.18-15.58.56:973][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2018.10.18-15.58.56:976][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2018.10.18-15.58.56:978][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2018.10.18-15.58.56:982][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/P_Explosion.uasset"
+[2018.10.18-15.58.56:985][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/P_Fire.uasset"
+[2018.10.18-15.58.56:988][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/P_Smoke.uasset"
+[2018.10.18-15.58.56:991][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/P_Sparks.uasset"
+[2018.10.18-15.58.56:994][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2018.10.18-15.58.56:996][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2018.10.18-15.58.56:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2018.10.18-15.58.57:002][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2018.10.18-15.58.57:005][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2018.10.18-15.58.57:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2018.10.18-15.58.57:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2018.10.18-15.58.57:013][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2018.10.18-15.58.57:016][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2018.10.18-15.58.57:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2018.10.18-15.58.57:022][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2018.10.18-15.58.57:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/MaterialSphere.uasset"
+[2018.10.18-15.58.57:030][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Bush.uasset"
+[2018.10.18-15.58.57:034][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Chair.uasset"
+[2018.10.18-15.58.57:037][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2018.10.18-15.58.57:040][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Couch.uasset"
+[2018.10.18-15.58.57:043][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Door.uasset"
+[2018.10.18-15.58.57:046][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2018.10.18-15.58.57:051][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2018.10.18-15.58.57:054][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2018.10.18-15.58.57:057][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2018.10.18-15.58.57:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2018.10.18-15.58.57:064][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2018.10.18-15.58.57:067][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2018.10.18-15.58.57:070][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Rock.uasset"
+[2018.10.18-15.58.57:073][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Shelf.uasset"
+[2018.10.18-15.58.57:075][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Stairs.uasset"
+[2018.10.18-15.58.57:078][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_Statue.uasset"
+[2018.10.18-15.58.57:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_TableRound.uasset"
+[2018.10.18-15.58.57:093][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2018.10.18-15.58.57:096][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2018.10.18-15.58.57:099][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2018.10.18-15.58.57:101][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2018.10.18-15.58.57:104][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2018.10.18-15.58.57:107][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2018.10.18-15.58.57:110][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2018.10.18-15.58.57:113][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2018.10.18-15.58.57:115][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2018.10.18-15.58.57:118][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2018.10.18-15.58.57:121][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2018.10.18-15.58.57:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2018.10.18-15.58.57:127][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2018.10.18-15.58.57:130][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2018.10.18-15.58.57:133][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2018.10.18-15.58.57:137][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2018.10.18-15.58.57:141][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2018.10.18-15.58.57:144][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2018.10.18-15.58.57:147][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2018.10.18-15.58.57:149][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2018.10.18-15.58.57:152][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2018.10.18-15.58.57:155][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2018.10.18-15.58.57:158][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2018.10.18-15.58.57:161][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2018.10.18-15.58.57:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2018.10.18-15.58.57:167][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2018.10.18-15.58.57:170][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2018.10.18-15.58.57:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2018.10.18-15.58.57:176][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2018.10.18-15.58.57:178][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2018.10.18-15.58.57:181][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2018.10.18-15.58.57:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2018.10.18-15.58.57:191][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2018.10.18-15.58.57:197][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2018.10.18-15.58.57:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2018.10.18-15.58.57:209][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2018.10.18-15.58.57:216][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2018.10.18-15.58.57:222][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2018.10.18-15.58.57:230][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2018.10.18-15.58.57:236][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2018.10.18-15.58.57:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2018.10.18-15.58.57:250][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2018.10.18-15.58.57:256][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2018.10.18-15.58.57:262][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2018.10.18-15.58.57:271][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2018.10.18-15.58.57:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2018.10.18-15.58.57:277][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2018.10.18-15.58.57:281][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2018.10.18-15.58.57:284][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2018.10.18-15.58.57:287][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2018.10.18-15.58.57:290][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2018.10.18-15.58.57:297][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2018.10.18-15.58.57:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2018.10.18-15.58.57:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2018.10.18-15.58.57:313][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2018.10.18-15.58.57:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2018.10.18-15.58.57:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2018.10.18-15.58.57:329][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2018.10.18-15.58.57:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2018.10.18-15.58.57:355][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2018.10.18-15.58.57:361][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2018.10.18-15.58.57:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2018.10.18-15.58.57:376][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2018.10.18-15.58.57:381][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2018.10.18-15.58.57:390][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2018.10.18-15.58.57:397][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2018.10.18-15.58.57:403][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2018.10.18-15.58.57:408][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2018.10.18-15.58.57:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2018.10.18-15.58.57:416][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2018.10.18-15.58.57:420][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2018.10.18-15.58.57:423][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Door_M.uasset"
+[2018.10.18-15.58.57:426][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Door_N.uasset"
+[2018.10.18-15.58.57:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2018.10.18-15.58.57:433][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2018.10.18-15.58.57:437][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2018.10.18-15.58.57:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2018.10.18-15.58.57:444][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2018.10.18-15.58.57:448][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2018.10.18-15.58.57:449][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2018.10.18-15.58.57:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2018.10.18-15.58.57:465][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2018.10.18-15.58.57:473][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2018.10.18-15.58.57:479][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2018.10.18-15.58.57:492][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2018.10.18-15.58.57:499][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2018.10.18-15.58.57:502][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2018.10.18-15.58.57:507][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2018.10.18-15.58.57:515][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2018.10.18-15.58.57:522][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2018.10.18-15.58.57:529][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2018.10.18-15.58.57:537][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2018.10.18-15.58.57:542][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2018.10.18-15.58.57:549][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2018.10.18-15.58.57:556][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2018.10.18-15.58.57:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2018.10.18-15.58.57:566][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2018.10.18-15.58.57:573][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2018.10.18-15.58.57:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2018.10.18-15.58.57:583][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2018.10.18-15.58.57:590][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2018.10.18-15.58.57:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2018.10.18-15.58.57:603][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2018.10.18-15.58.57:610][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2018.10.18-15.58.57:617][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2018.10.18-15.58.57:626][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2018.10.18-15.58.57:634][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2018.10.18-15.58.57:641][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2018.10.18-15.58.57:645][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2018.10.18-15.58.57:649][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2018.10.18-15.58.57:650][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2018.10.18-15.58.57:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2018.10.18-15.58.57:657][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2018.10.18-15.58.57:661][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2018.10.18-15.58.57:664][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2018.10.18-15.58.57:668][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2018.10.18-15.58.57:683][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2018.10.18-15.58.57:686][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2018.10.18-15.58.57:690][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2018.10.18-15.58.57:694][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2018.10.18-15.58.57:697][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2018.10.18-15.58.57:705][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2018.10.18-15.58.57:711][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2018.10.18-15.58.57:717][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2018.10.18-15.58.57:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Water_M.uasset"
+[2018.10.18-15.58.57:726][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Water_N.uasset"
+[2018.10.18-15.58.57:733][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2018.10.18-15.58.57:739][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2018.10.18-15.58.57:746][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2018.10.18-15.58.57:752][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2018.10.18-15.58.57:758][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2018.10.18-15.58.57:765][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2018.10.18-15.58.57:770][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2018.10.18-15.58.57:776][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2018.10.18-15.58.57:780][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2018.10.18-15.58.57:816][  0]LogRenderer: Reallocating scene render targets to support 256x256 Format 10 NumSamples 1 (Frame:1).
+[2018.10.18-15.58.57:855][  0]LogSavePackage: Moving '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Saved/Floor_400x40021960B11480DA7CB495D658AEF0767D1.tmp' to '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2018.10.18-15.58.57:857][  0]LogFeaturePack: Warning: Inserted 1 feature packs
+[2018.10.18-15.58.57:858][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.10.18-15.58.57:858][  0]LightingResults: New page: Lighting Build
+[2018.10.18-15.58.57:860][  0]MapCheck: New page: Map Check
+[2018.10.18-15.58.57:860][  0]LightingResults: New page: Lighting Build
+[2018.10.18-15.58.58:147][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.10.18-15.58.58:152][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.10.18-15.58.58:170][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.10.18-15.58.58:211][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 40.306ms to complete.
+[2018.10.18-15.58.58:211][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.352
+[2018.10.18-15.58.58:283][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-15.58.58:288][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-15.58.58:294][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-15.58.58:299][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-15.58.58:302][  0]LogCollectionManager: Loaded 0 collections in 0.000953 seconds
+[2018.10.18-15.58.58:339][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Saved/Collections/' took 0.01s
+[2018.10.18-15.58.58:339][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/Developers/Aahed/Collections/' took 0.01s
+[2018.10.18-15.58.58:339][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/Collections/' took 0.01s
+[2018.10.18-15.58.58:339][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.10.18-15.58.58:346][  0]LogContentBrowser: Native class hierarchy populated in 0.0068 seconds. Added 2597 classes and 612 folders.
+[2018.10.18-15.58.58:350][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.10.18-15.58.58:373][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.10.18-15.58.58:376][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2018.10.18-15.58.58:385][  0]LogSlate: Took 0.000115 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.10.18-15.58.58:387][  0]LogSlate: Took 0.000122 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.10.18-15.58.58:390][  0]LogSlate: Took 0.000219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.10.18-15.58.58:425][  0]LogRenderer: Reallocating scene render targets to support 2172x780 Format 10 NumSamples 1 (Frame:1).
+[2018.10.18-15.58.58:508][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.10.18-15.58.58:508][  0]LogLoad: (Engine Initialization) Total time: 6.86 seconds
+[2018.10.18-15.58.58:508][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.10.18-15.58.58:517][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.10.18-15.58.58:536][  0]LogAssetRegistry: Asset discovery search completed in 4.1892 seconds
+[2018.10.18-15.58.58:537][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.10.18-15.58.58:537][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000031 seconds (updated 0 objects)
+[2018.10.18-15.58.58:597][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.10.18-15.59.04:957][760]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2018.10.18-15.59.06:404][920]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2018.10.18-15.59.11:405][510]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2018.10.18-15.59.12:106][583]LogSlate: Took 0.000139 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.10.18-15.59.13:129][705]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.18-15.59.14:462][865]LogSlate: Took 0.000123 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.10.18-15.59.14:463][865]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.18-15.59.14:465][865]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter
+[2018.10.18-15.59.14:797][865]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0004 seconds. Added 116 classes and 0 folders.
+[2018.10.18-15.59.15:350][865]LogSlate: Took 0.000149 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.10.18-15.59.19:521][293]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.00.22:198][521]LogEditorTransaction: Undo Modify Component(s)
+[2018.10.18-16.00.38:623][436]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.00.38:705][446]BlueprintLog: New page: Compile ThirdPersonCharacter
+[2018.10.18-16.00.40:252][579]LogSavePackage: Moving '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Saved/ThirdPersonCharacterA92B46064D099985133C618A96B079C4.tmp' to '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
+[2018.10.18-16.00.41:871][764]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.00.41:920][770]LogSlate: Window 'ThirdPersonCharacter' being destroyed
+[2018.10.18-16.00.41:923][770]LogSlate: Window 'ThirdPersonCharacter' being destroyed
+[2018.10.18-16.00.43:341][932]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.00.43:408][940]LogTemp: Repeating last play command: Selected Viewport
+[2018.10.18-16.00.43:418][940]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.00.43:418][940]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.10.18-16.00.43:429][940]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 18, 2018, 8:00:43 PM)
+[2018.10.18-16.00.43:429][940]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2018.10.18-16.00.43:442][940]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012885s)
+[2018.10.18-16.00.43:442][940]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.10.18-16.00.43:442][940]LogPlayLevel: PIE: World Init took: (0.000540s)
+[2018.10.18-16.00.43:443][940]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.013547s)
+[2018.10.18-16.00.43:494][940]LogInit: XAudio2 using 'Acer X34A (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.10.18-16.00.43:500][940]LogInit: FAudioDevice initialized.
+[2018.10.18-16.00.43:548][940]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2018.10.18-16.00.43:550][940]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2018.10.18-18.00.43
+[2018.10.18-16.00.43:550][940]LogWorld: Bringing up level for play took: 0.001105
+[2018.10.18-16.00.43:565][940]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0002 seconds. Added 10 classes and 0 folders.
+[2018.10.18-16.00.43:566][940]PIE: Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.435
+[2018.10.18-16.00.43:566][940]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.01.45:152][758]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.01.45:152][758]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-16.01.45:182][758]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.10.18-16.01.45:182][758]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.01.45:206][758]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-16.01.45:255][763]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2018.10.18-16.01.48:140][107]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2018.10.18-16.01.49:312][236]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.18-16.01.50:039][323]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.18-16.01.50:040][323]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter
+[2018.10.18-16.01.55:922][924]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.02.28:145][677]BlueprintLog: New page: Compile ThirdPersonCharacter
+[2018.10.18-16.02.28:899][723]LogSavePackage: Moving '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Saved/ThirdPersonCharacterE6380A014F4B4E704D4206B7839CFDC0.tmp' to '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
+[2018.10.18-16.02.30:444][900]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.02.30:503][907]LogTemp: Repeating last play command: Selected Viewport
+[2018.10.18-16.02.30:515][907]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.30:515][907]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.10.18-16.02.30:515][907]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 18, 2018, 8:02:30 PM)
+[2018.10.18-16.02.30:515][907]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2018.10.18-16.02.30:523][907]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007839s)
+[2018.10.18-16.02.30:524][907]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.10.18-16.02.30:524][907]LogPlayLevel: PIE: World Init took: (0.000541s)
+[2018.10.18-16.02.30:524][907]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.008478s)
+[2018.10.18-16.02.30:578][907]LogInit: XAudio2 using 'Acer X34A (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.10.18-16.02.30:583][907]LogInit: FAudioDevice initialized.
+[2018.10.18-16.02.30:614][907]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2018.10.18-16.02.30:616][907]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2018.10.18-18.02.30
+[2018.10.18-16.02.30:616][907]LogWorld: Bringing up level for play took: 0.001082
+[2018.10.18-16.02.30:628][907]PIE: Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.503
+[2018.10.18-16.02.30:628][907]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.34:856][409]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.34:857][409]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-16.02.34:888][409]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.10.18-16.02.34:888][409]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.34:910][409]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-16.02.34:960][411]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2018.10.18-16.02.37:062][663]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.10.18-16.02.38:812][769]LogTemp: Repeating last play command: Selected Viewport
+[2018.10.18-16.02.38:822][769]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.38:822][769]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.10.18-16.02.38:822][769]PIE: New page: PIE session: ThirdPersonExampleMap (Oct 18, 2018, 8:02:38 PM)
+[2018.10.18-16.02.38:822][769]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2018.10.18-16.02.38:830][769]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007752s)
+[2018.10.18-16.02.38:830][769]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.10.18-16.02.38:831][769]LogPlayLevel: PIE: World Init took: (0.000530s)
+[2018.10.18-16.02.38:831][769]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.008383s)
+[2018.10.18-16.02.38:855][769]LogInit: XAudio2 using 'Acer X34A (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.10.18-16.02.38:860][769]LogInit: FAudioDevice initialized.
+[2018.10.18-16.02.38:887][769]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2018.10.18-16.02.38:889][769]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2018.10.18-18.02.38
+[2018.10.18-16.02.38:889][769]LogWorld: Bringing up level for play took: 0.001133
+[2018.10.18-16.02.38:901][769]PIE: Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.23
+[2018.10.18-16.02.38:901][769]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.54:527][642]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.54:527][642]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-16.02.54:559][642]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.10.18-16.02.54:559][642]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.10.18-16.02.54:582][642]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.10.18-16.02.54:630][644]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2018.10.18-16.02.56:436][860]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.02.56:627][866]LogSavePackage: Moving '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Saved/ThirdPersonExampleMap0258BBC9492CBCC72AFAEF98C57C760A.tmp' to '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2018.10.18-16.02.56:778][866]LogSavePackage: Moving '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Saved/ThirdPersonExampleMap_BuiltDataCACB8E5B4E55BCE5B24B44BD8B74A3E4.tmp' to '../../../../../../Users/Aahed/Documents/Unreal Projects/Aahedtest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2018.10.18-16.02.57:826][991]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.10.18-16.02.57:893][999]LogSlate: Window 'ThirdPersonCharacter' being destroyed
+[2018.10.18-16.02.57:895][999]LogSlate: Window 'ThirdPersonCharacter' being destroyed
